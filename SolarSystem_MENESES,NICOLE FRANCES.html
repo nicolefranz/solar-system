@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MIDTERM_MENESES,NICOLE FRANCES</title>
+</head>
+<style>
+	body{
+		background-image: url(background.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.sun{
+		background-image: url(sun.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top: 43%;
+		left: 45%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 20px orange);
+	}
+	@-webkit-keyframes sun-rotation{
+		from{
+			transform: rotateX(0deg);
+		}
+		to{
+			transform: rotateZ(360deg);
+		}
+	}
+
+	.mercury{
+		background-image: url(mercury.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:15px;
+		width: 15px;
+		position: absolute;
+		top: 48.5%;
+		left: 47.7%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 10px red);
+		animation: rotation-mercury 2s linear infinite;
+	}
+	.mercury-orbit{
+		height: 150px;
+		width: 150px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 39.45%;
+		left: 43.25%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-mercury{
+		from{
+			transform: rotate(0) translateX(76px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(76px) rotate(-360deg);
+		}
+	}
+	.venus{
+		background-image: url(venus.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:40px;
+		width: 40px;
+		position: absolute;
+		top: 46.8%;
+		left: 46.9%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 20px brown);
+		animation: rotation-venus 5s linear infinite;
+	}
+	.venus-orbit{
+		height: 220px;
+		width: 220px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 35%;
+		left: 41%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-venus{
+		from{
+			transform: rotate(0) translateX(110px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(110px) rotate(-360deg);
+		}
+	}
+	.earth{
+		background-image: url(earth.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:35px;
+		width:35px;
+		position: absolute;
+		top: 47%;
+		left: 47%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 55px blue);
+		animation: rotation-earth 6s linear infinite;*/
+	}
+	.earth-orbit{
+		height: 290px;
+		width: 290px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 30.5%;
+		left: 38.7%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	.moon-orbit{
+		height: 50px;
+		width: 50px;
+		border: 1px solid white;
+		position: relative;
+		left: -8px;
+		top: -8px;
+		border-radius: 40px;
+	}
+	.earth-moon{
+		background-image: url(moon.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 37%;
+		top: 37%;
+		animation: rotation-earth-moon 3s linear infinite;
+	}
+	@-webkit-keyframes rotation-earth{
+		from{
+			transform: rotate(0) translateX(145px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(145px) rotate(-360deg);
+		}
+	}
+	@-webkit-keyframes rotation-earth-moon{
+		from{
+			transform: rotate(0) translateX(27px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(27px) rotate(-360deg);
+		}
+	}
+	.mars{
+		background-image: url(mars.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:35px;
+		width: 35px;
+		position: absolute;
+		top: 47%;
+		left: 47%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 20px #9D5353);
+		animation: rotation-mars 15s linear infinite;*/
+	}
+	.mars-orbit{
+		height: 380px;
+		width: 380px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 25.1%;
+		left: 35.9%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-mars{
+		from{
+			transform: rotate(0) translateX(187px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(187px) rotate(-360deg);
+		}
+	}
+	.asteroid-belt{
+		background-image: url(asteroid.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:450px;
+		width: 450px;
+		position: absolute;
+		top: 21%;
+		left: 33.5%;
+		filter: drop-shadow(0 0 10px #9D5353);
+		animation: rotation-asteroid 200s linear infinite;
+	}
+	@-webkit-keyframes rotation-asteroid{
+		100%{
+			transform: rotate(360deg) translateZ(0);
+		}
+	}
+	.jupiter{
+		background-image: url(jupiter.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:60px;
+		width: 60px;
+		position: absolute;
+		top: 45.5%;
+		left: 46.3%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 50px #FC4F4F);
+		animation: rotation-jupiter 100s linear infinite;*/
+	}
+	.jupiter-orbit{
+		height: 480px;
+		width: 490px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 18.5%;
+		left: 32.2%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-jupiter{
+		from{
+			transform: rotate(0) translateX(240px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(240px) rotate(-360deg);
+		}
+	}
+	.saturn{
+		background-image: url(saturn.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:70px;
+		width: 70px;
+		position: absolute;
+		top: 45.5%;
+		left: 46%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 10px #361500);		
+		animation: rotation-saturn 300s linear infinite;*/
+	}
+	.saturn-orbit{
+		height: 580px;
+		width: 580px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 12.5%;
+		left: 29.5%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-saturn{
+		from{
+			transform: rotate(0) translateX(290px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(290px) rotate(-360deg);
+		}
+	}
+	.uranus{
+		background-image: url(uranus.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:50px;
+		width: 50px;
+		position: absolute;
+		top: 46.5%;
+		left: 46.5%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 20px #1572A1);
+		animation: rotation-uranus 700s linear infinite;*/
+	}
+	.uranus-orbit{
+		height: 670px;
+		width: 670px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 7%;
+		left: 26.7%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-uranus{
+		from{
+			transform: rotate(0) translateX(335px) rotate(0deg);
+	}
+		to{
+			transform: rotate(360deg) translateX(335px) rotate(-360deg);
+		}
+	}
+	.neptune{
+		background-image: url(mars.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height:30px;
+		width: 30px;
+		position: absolute;
+		top: 47.5%;
+		left: 47.2%;
+		border-radius: 50%;
+		filter: drop-shadow(0 0 30px #FF1818);
+		animation: rotation-neptune 1200s linear infinite;*/
+	}
+	.neptune-orbit{
+		height: 750px;
+		width: 750px;
+		border: 2px solid white;
+		border-radius: 50%;
+		opacity: 50%;
+		position: absolute;
+		top: 2%;
+		left: 24.1%;
+		filter: drop-shadow(0 0 5px white);
+	}
+	@-webkit-keyframes rotation-neptune{
+		from{
+			transform: rotate(0) translateX(370px) rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg) translateX(370px) rotate(-360deg);
+		}
+	}
+
+
+	p{
+		color: white;
+		font-family: system-ui;
+		position: absolute;
+		top: 60%;
+	}
+
+</style>
+
+<body>
+	<img src="solar.png" height="100px" width="400px">
+	<div class="asteroid-belt"></div>
+	<div class="neptune-orbit"></div>
+	<div class="uranus-orbit"></div>
+	<div class="saturn-orbit"></div>
+	<div class="jupiter-orbit"></div>
+	<div class="mars-orbit"></div>
+	<div class="earth-orbit"></div>	
+	<div class="venus-orbit"></div>
+	<div class="mercury-orbit"></div>
+	<div class="sun"></div>
+	<div class="mercury">
+		<p>MERCURY</p>
+	</div>
+	<div class="venus">
+		<p>VENUS</p>
+	</div>
+	<div class="earth">
+		<div class="moon-orbit">
+		<div class="earth-moon">
+			</div>
+		</div>
+		<p>EARTH</p>
+	</div>
+	<div class="mars">
+		<p>MARS</p>
+	</div>
+	<div class="jupiter">
+		<p>JUPITER</p>
+	</div>
+	<div class="saturn">
+		<p>SATURN</p>
+	</div>
+	<div class="uranus">
+		<p>URANUS</p>
+	</div>
+	<div class="neptune">
+		<p>NEPTUNE</p>
+	</div>
+	
+
+
+
+	
+
+</body>
+</html>
